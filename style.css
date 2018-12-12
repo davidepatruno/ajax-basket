@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+h2 {
+  text-align: center;
+}
+
 .header_wrapper {
   width: 60%;
   margin: 50px auto;
@@ -21,76 +25,46 @@
   margin: auto;
   width: 800px;
   height: 800px;
-  background-color: red;
 }
 
 .codici_player {
   width: 40%;
   height: 100%;
-  background-color: yellow;
   overflow-y: auto;
+  text-align: center;
 }
 
 .playercode {
   width: 100%;
   height: 60px;
   line-height: 60px;
-  border-bottom: 1px solid black;
-  background-color: white;
+  border: 1px solid white;
+  background-color: lightgrey;
+  color: black;
   cursor: pointer;
 }
 
 .stats_wrapper {
   width: 60%;
-  height: 100%;
-  background: grey;
+  height: 60%;
+  background-image: url("http://www.agenziaimpress.it/wp-content/uploads/2014/12/pallone-basket1.jpg");
+  background-size: cover;
+  border-radius: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .giocatore_wrapper {
-  display: flex;
-  justify-content: space-around;
-  width: 80%;
-  height: 70%;
-  margin: 100px auto;
-  background-color: grey;
-  align-items: center;
-
+.stats {
+  width: 60%;
+  margin: 80px auto;
+  background-color: rgba(211,211,211, 0.8);
+  border-radius: 30px;
 }
 
-.giocatore {
-  width: 200px;
-  height: 200px;
-  background-color: blue;
-  overflow-x: scroll;
+.stats ul {
+  font-size: 20px;
+  list-style: none;
 }
 
-.schede_wrapper {
-  width: 600px;
-  height: 300px;
-  background-color: red;
-  display: flex;
-  flex-direction: column;
+.stats ul li {
+  padding: 20px;
+  color: black;
 }
-
-.template {
-  display: none;
-}
-
-.scheda_giocatore {
-  width: 600px;
-  height: 300px;
-  background-color: red;
-} */
