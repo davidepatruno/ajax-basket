@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+    <title>Punti basket</title>
+  </head>
+  <body>
+    <div class="header_wrapper">
+      <span>Inserisci il numero di giocatori che desideri generare</span>
+      <input id="userinput" type="text" placeholder="Numero..">
+    </div>
+    <div class="wrapper_generale">
+
+      <div class="codici_player">
+
+      </div>
+
+      <div class="stats_wrapper">
+
+      </div>
+    </div>
+    <script id="playercode_template" type="text/x-handlebars-template">
+      <div class="playercode">{{codicegiocatore}}</div>
+    </script>
+    <script id="stats_template" type="text/x-handlebars-template">
+      <div class="stats">
+        <ul>
+          <li>codicegiocatore: {{code}}</li>
+          <li>rimbalzi: {{bounce}}</li>
+          <li>punti: {{score}}</li>
+          <li>falli: {{fault}}</li>
+          <li>tiri2: {{shoots2}}</li>
+          <li>tiri3: {{shoots3}}</li>
+        </ul>
+      </div>
+    </script>
+
+
+    <script src="main.js"></script>
+
+  </body>
+</html>
+<!-- <div class="giocatore_wrapper">
+
+  <div class="giocatore">
+  </div>
+  <div class="schede_wrapper">
+    <h1>Resoconto Giocatore</h1>
+
+
+  </div>
+</div>
+
+
+<div class="template">
+  <div class="giocatore_template">
+      <span class="codiceGiocatore">codice</span>
+
+  </div>
+  <div class="template_scheda">
+    <div class="scheda_giocatore">
+      <span class="punti_Segnati">punti</span>
+      <span class="num_rimbalzi">rimbalzi</span>
+
+    </div>
+  </div>
+
+
+</div> -->
